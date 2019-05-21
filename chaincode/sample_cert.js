@@ -1,0 +1,10 @@
+receipient = "G. Harika";
+regno = "16BCE0589";
+cgpa = "8.8";
+type = "Bachelor of Technology";
+branch = "Computer Science and Engineering";
+enrollmentYear = 2016;
+graduationYear = 2020;
+issuer = "altcoinadmin@vit.ac.in";
+status = "OK";
+uid = "cert_98787634567898765434567899876345"

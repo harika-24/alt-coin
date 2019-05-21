@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="favicon.png" sizes="16x16">
+    <!-- Favicon end -->
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Alt Coin - Certificate Verification</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" media="screen" href="assets/main.css" />
+    <script src="assets/main.js"></script>
+</head>
+<body>
+    <!-- Main Content here -->
+    <div class="container main">
+		<div class="row justify-content-center">
+			<div class="col-8 offset-md-3">
+                <p class="heading">Alt Coin - Certificate Verification</p>
+                <p><%= x %></p>
+                <p>Receipient <%= x.recipient %></p>
+				<form method="POST" action="/addCertificate">
+					<div class="form" id="form1">
+                        <p class="subheading">Add Certificates</p>
+                        <label for="recipient">Recipient</label>
+                        <input  name="recipient" type="text" placeholder="Firsname Lastname" class="maininput">
+						<label for="regNo">Registration Number</label>
+						<input  name="regno" type="text" placeholder="16BCE2147" class="maininput">
+						<label for="cgpa">CGPA</label>
+                        <input  name="cgpa" type="number" placeholder="8.8" class="maininput">
+                        <label for="type">Graduation</label>
+						<input  name="type" type="text" placeholder="Bachelor of Technology" class="maininput">
+                        <label for="branch">Branch</label>
+						<input  name="branch" type="text" placeholder="Computer Science and Engineering" class="maininput">
+                        <label for="enrollmentYear">Enrollment Year</label>
+                        <input  name="enrollmentYear" type="number" placeholder="2016" class="maininput">
+                        <label for="graduationYear">Graduation Year</label>
+                        <input  name="graduationYear" type="number" placeholder="2020" class="maininput">
+                        <label for="issuer">Issuer</label>
+                        <input  name="issuer" type="text" placeholder="altcoinadmin@vit.ac.in" class="maininput">
+						<div class="btnarea main">
+							<button type="submit" class="btn btn-primary">ADD</button>
+						</div>
+					</div>
+				</form>
+            </div>
+		</div>
+    </div>
+    <script>
+        y = JSON.stringify("<%= x %>");
+    console.log('OBJ ' + y );
+
+    </script>
+    <!-- Main Content ends here -->
+    <!-- Scripts -->
+	<script type="text/javascript" src="javascripts/jquery-3.2.1.min.js"></script>
+	<!-- <script type="text/javascript" src="javascripts/script.js"></script> -->
+</body>
+</html>

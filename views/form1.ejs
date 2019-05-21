@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="favicon.png" sizes="16x16">
+    <!-- Favicon end -->
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Alt Coin - Certificate Verification</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" media="screen" href="assets/main.css" />
+    <script src="assets/main.js"></script>
+</head>
+<body>
+    <!-- Main Content here -->
+    <div class="container main">
+		<div class="row">
+			<div class="col">
+				<img src="assets/img/main_login.png" id="mainimage">
+			</div>
+			<div class="col">
+				<p class="heading">Alt Coin - Certificate Verification</p>
+				<form method="POST" action="/verifyCertificate">
+					<div class="form" id="form1">
+						<p class="subheading">Verify your certificate form</p>
+						<label for="cid">CID</label>
+						<input  name="cid" type="text" placeholder="abcdsdi2isd" class="maininput">
+						<div class="btnarea main">
+							<button type="submit" class="btn btn-primary">Verify</button>
+						</div>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+    <!-- Main Content ends here -->
+    <!-- Scripts -->
+	<script type="text/javascript" src="javascripts/jquery-3.2.1.min.js"></script>
+	<!-- <script type="text/javascript" src="javascripts/script.js"></script> -->
+</body>
+</html>

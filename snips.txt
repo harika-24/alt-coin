@@ -1,0 +1,57 @@
+var request = {
+  //targets: let default to the peer assigned to the client
+  chaincodeId: 'technoutsav-cv',
+  fcn: 'initLedger',
+  args: [''],
+  chainId: 'mychannel',
+  txId: tx_id
+};
+
+//this should throw an error bc the owner of the vehicle is bidding on own vehicle (this is not allowed)
+var request = {
+  //targets: let default to the peer assigned to the client
+  chaincodeId: 'technoutsav-cv',
+  fcn: 'makeOffer',
+  args: ['3000', 'ABCD', 'memberA@acme.org'],
+  chainId: 'mychannel',
+  txId: tx_id
+};
+
+// add certificate
+var request = {
+    //targets: let default to the peer assigned to the client
+    chaincodeId: 'technoutsav-cv',
+    fcn: 'addCert',
+    args: ['cert_ba1e90d5de978b28c82d7ebaf2a7768a597d9d38d49e024b75c5c42c93e9aad6','Arvind', '21332147', '9.5', 'Bachelor of Technology', 'Chemical Engineering',  '2015', '2019', 'altcoinadmin@manipal.edu', 'OK' ],
+    chainId: 'mychannel',
+    txId: tx_id
+  };
+
+var request = {
+  //targets: let default to the peer assigned to the client
+  chaincodeId: 'technoutsav-cv',
+  fcn: 'makeOffer',
+  args: ['5000', 'ABCD', 'memberC@acme.org'],
+  chainId: 'mychannel',
+  txId: tx_id
+};
+
+//this should throw an error bc memberB only has 5000 in their account. 5001 > than their balance, so error is thrown.
+var request = {
+  //targets: let default to the peer assigned to the client
+  chaincodeId: 'technoutsav-cv',
+  fcn: 'makeOffer',
+  args: ['5001', 'ABCD', 'memberB@acme.org'],
+  chainId: 'mychannel',
+  txId: tx_id
+};
+
+var request = {
+  //targets: let default to the peer assigned to the client
+  chaincodeId: 'technoutsav-cv',
+  fcn: 'closeBidding',
+  args: ['ABCD'],
+  chainId: 'mychannel',
+  txId: tx_id
+};
+//
